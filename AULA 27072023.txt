@@ -21,3 +21,39 @@ N+20 P=2
                       10
 C=20!     =  20!    = 20 X 19 X 18!
 2!X(20-2)! 2!X18!     2! X 18!
+--------------------------------------------------
+Algoritmo 01
+Fernando Bastos
+
+A ou é a parte da Matemática que estuda métodos e técnicas que permitem resolver problemas relacionados com contagem.
+
+Combinações
+As combinações, um dos tipos de análise combinatória, são subconjuntos onde a ordem dos elementos não é
+importante, entretanto, são caracterizadas pela natureza dos mesmos.
+Assim, para calcular uma combinação simples de n elementos tomados p a p (p ≤ n), utiliza-se a seguinte expressão:
+C= n! / (p! x(n-p)!)
+Fazer um algoritmo que leia os valores N e P e informe quantas combinações são possíveis com estes valores
+
+Program Pzim ;
+var i,n,p,np,fn,fp:integer;
+    c: real;
+Begin
+  clrscr;
+  write ('Informe os valores de N e P ');
+  readln (n,p);
+  np:=n-p;
+  fn:=1;
+  for i:= n downto (np +1) do
+    fn:= fn *i;
+  fp:=1;
+  for i:= 1 to p do
+    fp:= fp *i;
+  c := fn/fp;
+  writeln ('Combinaþ§es: ', c:3:0);
+End.
+-------------------------
+lgoritmo 02
+Fernando Bastos
+
+A Mega-Sena,  um dos jogos mais tradicionais no Brasil, consiste no sorteio de 6 números dentre 60 números (1 a 60).
+Um apostador deseja fazer um jogo utilizando-se da combinação e 10 números. Faça um algoritmo para ler 10 dezenas quaisquer e gerar todas as combinações com 6 dezenas.

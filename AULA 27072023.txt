@@ -35,7 +35,7 @@ C= n! / (p! x(n-p)!)
 Fazer um algoritmo que leia os valores N e P e informe quantas combinações são possíveis com estes valores
 
 Program Pzim ;
-var i,n,p,np,fn,fp:integer;
+var i,n,p,np,fn,fp:integer;.
     c: real;
 Begin
   clrscr;
